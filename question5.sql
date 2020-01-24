@@ -1,0 +1,2 @@
+use bioinf_examen;
+Select gene_name, count(exon_id) as nr_of_exons from gene g join transcript t on g.gene_id = t.gene_id join exon_transcript ext on t.transcript_id = ext.transcript_id group by gene_name order by nr_of_exons desc limit 1;
