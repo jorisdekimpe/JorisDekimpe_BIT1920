@@ -1,0 +1,13 @@
+1NF : A single value in each cell, every value of the same type and a unique identifier.
+DB(Personnel number, name, dat of birth, lab code, lab name, research code, research descrition, research supervisor)
+
+2NF 
+DB(Personnel number, name, date of birth,
+RF1(personnel number, research code)
+RF2(research code,Lab code, lab name,  research description)
+
+3NF:
+DB(Personnel number, name, date of birth, 
+RF1(personnel number, research code)
+RF2(research code, Lab code, lab name, research description)
+
